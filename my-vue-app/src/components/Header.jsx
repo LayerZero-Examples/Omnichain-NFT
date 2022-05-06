@@ -1,4 +1,5 @@
 import { Button, ConnectButton, DatePicker, Icon, Input, Select } from "web3uikit";
+
 function Header() {
     return <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -14,7 +15,7 @@ function Header() {
                 <a className="mr-5 hover:text-gray-900">Third Link</a>
                 <a className="mr-5 hover:text-gray-900">Fourth Link</a> */}
             </nav>
-            <ConnectButton chainId={1} />
+            <ConnectButton />
         </div>
     </header>;
 }

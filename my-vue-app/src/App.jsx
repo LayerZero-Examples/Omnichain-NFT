@@ -7,8 +7,8 @@ import { networks } from "./abis/OmniChainNFT.json";
 
 function App() {
   // const [count, setCount] = useState(0)
-  const { Moralis, chainId, account } = useMoralis();
-  console.log(chainId)
+  const { chainId, account } = useMoralis();
+
   return (
     <>
       <Header />
