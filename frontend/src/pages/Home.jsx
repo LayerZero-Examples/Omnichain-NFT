@@ -38,8 +38,8 @@ function Home() {
             errorMsg = "User denied the request";
         } else {
             try {
-                const errorF = getError(error.error.data.originalError.data)
-                errorMsg = errorF.name;
+                const errorF = error.error.data.originalError.data
+                errorMsg = errorF;
             } catch (err) {
             }
         }
