@@ -107,7 +107,7 @@ function Home() {
             <div className="col-span-2">
                 <div className="text-2xl">Your NFTs</div>
                 {nfts.length === 0 ? <div className="text-lg text-red-600 mt-5">No NFTs Available</div> : <div className="grid grid-cols-3 gap-3 mt-3">
-                    {nfts.map(nft => <Card children={[<div>
+                    {nfts.map((nft, i) => <Card key={i} children={[<div>
                         <p className="text-xl">Token ID: #{nft.token_id}</p>
                         <div className="">
                             <button onClick={() => transferMFT(nft.token_id)} className="block bg-indigo-500 w-full py-2 rounded-lg mt-3 text-white text-center">Transfer</button>
